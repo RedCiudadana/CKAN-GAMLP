@@ -6,9 +6,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-demo 0.0.1\n"
+"Project-Id-Version: ckanext-lapaz 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-20 16:32+0000\n"
+"POT-Creation-Date: 2022-09-07 19:11+0000\n"
 "PO-Revision-Date: 2022-08-20 16:32+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -19,106 +19,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: ckanext/demo/templates/footer.html:8
+#: ckanext/lapaz/templates/footer.html:8
 msgid "Site logo"
 msgstr "Logo del sitio"
 
-#: ckanext/demo/templates/footer.html:13
+#: ckanext/lapaz/templates/footer.html:13
 msgid "The centralized portal of government data"
 msgstr "El portal centralizado de datos de gobierno"
 
-#: ckanext/demo/templates/footer.html:22
+#: ckanext/lapaz/templates/footer.html:22
 msgid "About {0}"
 msgstr "Acerca {0}"
 
-#: ckanext/demo/templates/footer.html:30
+#: ckanext/lapaz/templates/footer.html:30
 msgid "CKAN API"
 msgstr "CKAN API"
 
-#: ckanext/demo/templates/footer.html:32
+#: ckanext/lapaz/templates/footer.html:32
 msgid "CKAN Association"
 msgstr "Asociación CKAN"
 
-#: ckanext/demo/templates/footer.html:48
-msgid ""
-"<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
-"href=\"http://ckan.org\">CKAN</a >"
-msgstr ""
-
-#: ckanext/demo/templates/footer.html:63
+#: ckanext/lapaz/templates/footer.html:63
 msgid "Developed by civil association Red Ciudadana®"
 msgstr "Desarrollado por Asociación Civil Red Ciudadana®"
 
-#: ckanext/demo/templates/home/index.html:4
+#: ckanext/lapaz/templates/home/index.html:4
 msgid "Welcome"
 msgstr "Bienvenido"
 
-#: ckanext/demo/templates/home/layout1.html:20
+#: ckanext/lapaz/templates/home/layout1.html:20
 msgid "Functions"
 msgstr "Funciones"
 
-#: ckanext/demo/templates/home/layout1.html:24
+#: ckanext/lapaz/templates/home/layout1.html:24
 msgid "Publish"
 msgstr "Publica"
 
-#: ckanext/demo/templates/home/layout1.html:26
+#: ckanext/lapaz/templates/home/layout1.html:26
 msgid "Makes data of public interest available in different formats"
 msgstr "Pone a disposición datos en formatos de interés ciudadanos"
 
-#: ckanext/demo/templates/home/layout1.html:32
+#: ckanext/lapaz/templates/home/layout1.html:32
 msgid "Download"
 msgstr "Descarga"
 
-#: ckanext/demo/templates/home/layout1.html:34
+#: ckanext/lapaz/templates/home/layout1.html:34
 msgid "Quick and easy download of data in many formats"
 msgstr "Rápida y fácil descarga de datos en diferentes formatos"
 
-#: ckanext/demo/templates/home/layout1.html:40
+#: ckanext/lapaz/templates/home/layout1.html:40
 msgid "API"
 msgstr "API"
 
-#: ckanext/demo/templates/home/layout1.html:42
+#: ckanext/lapaz/templates/home/layout1.html:42
 msgid "The portal includes an API to facilitate data consumption by third-parties"
-msgstr "El portal de datos cuenta con una API para facilitar el consumo de recursos disponibles por parte de los reutilizadores de datos"
+msgstr ""
+"El portal de datos cuenta con una API para facilitar el consumo de "
+"recursos disponibles por parte de los reutilizadores de datos"
 
-#: ckanext/demo/templates/home/layout1.html:53
+#: ckanext/lapaz/templates/home/layout1.html:53
 msgid "Data categories"
 msgstr "Categorías de datos"
 
-#: ckanext/demo/templates/home/layout1.html:80
+#: ckanext/lapaz/templates/home/layout1.html:66
 #, python-format
 msgid "%(count)s dataset"
 msgid_plural "%(count)s datasets"
 msgstr[0] "%(count)s conjunto de datos"
 msgstr[1] "%(count)s conjuntos de datos"
 
-#: ckanext/demo/templates/home/layout1.html:86
+#: ckanext/lapaz/templates/home/layout1.html:72
 msgid "See all categories"
 msgstr "Ver todas las categorías"
 
-#: ckanext/demo/templates/home/snippets/promoted.html:6
+#: ckanext/lapaz/templates/home/layout1.html:85
+msgid "Recently published data"
+msgstr ""
+
+#: ckanext/lapaz/templates/home/layout1.html:96
+#, fuzzy, python-format
+#| msgid "%(count)s dataset"
+#| msgid_plural "%(count)s datasets"
+msgid "%(count)s resources"
+msgid_plural "%(count)s resources"
+msgstr[0] "%(count)s conjunto de datos"
+msgstr[1] "%(count)s conjuntos de datos"
+
+#: ckanext/lapaz/templates/home/layout1.html:102
+#, fuzzy
+#| msgid "Search datasets"
+msgid "See all datasets"
+msgstr "Buscar conjuntos de datos"
+
+#: ckanext/lapaz/templates/home/snippets/promoted.html:6
 msgid ""
 "This is a nice introductory paragraph about CKAN or the site in general. "
 "We don't have any copy to go here yet but soon we will"
 msgstr ""
 
-#: ckanext/demo/templates/home/snippets/search.html:2
+#: ckanext/lapaz/templates/home/snippets/search.html:2
 msgid "E.g. environment"
 msgstr "e.g. Ambiente"
 
-#: ckanext/demo/templates/home/snippets/search.html:12
+#: ckanext/lapaz/templates/home/snippets/search.html:12
 msgid "Search datasets"
 msgstr "Buscar conjuntos de datos"
 
-#: ckanext/demo/templates/home/snippets/search.html:19
+#: ckanext/lapaz/templates/home/snippets/search.html:19
 msgid "What data do you need?"
 msgstr "¿Qué datos necesitas?"
 
-#: ckanext/demo/templates/home/snippets/search.html:23
+#: ckanext/lapaz/templates/home/snippets/search.html:23
 msgid "Search"
 msgstr "Buscar"
 
-#: ckanext/demo/templates/home/snippets/search.html:28
+#: ckanext/lapaz/templates/home/snippets/search.html:28
 msgid "Popular tags"
 msgstr "Búsquedas populares"
+
+#~ msgid ""
+#~ "<strong>Powered by</strong> <a class=\"hide-"
+#~ "text ckan-footer-logo\" "
+#~ "href=\"http://ckan.org\">CKAN</a >"
+#~ msgstr ""
 
