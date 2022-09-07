@@ -94,7 +94,7 @@ msgstr "Ver todas las categorías"
 
 #: ckanext/lapaz/templates/home/layout1.html:85
 msgid "Recently published data"
-msgstr ""
+msgstr "Datos publicados recientemente"
 
 #: ckanext/lapaz/templates/home/layout1.html:96
 #, fuzzy, python-format
