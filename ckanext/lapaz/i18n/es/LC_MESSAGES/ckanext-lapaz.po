@@ -97,17 +97,12 @@ msgid "Recently published data"
 msgstr "Datos publicados recientemente"
 
 #: ckanext/lapaz/templates/home/layout1.html:96
-#, fuzzy, python-format
-#| msgid "%(count)s dataset"
-#| msgid_plural "%(count)s datasets"
 msgid "%(count)s resources"
 msgid_plural "%(count)s resources"
-msgstr[0] "%(count)s conjunto de datos"
-msgstr[1] "%(count)s conjuntos de datos"
+msgstr[0] "%(count)s recurso"
+msgstr[1] "%(count)s recursos"
 
 #: ckanext/lapaz/templates/home/layout1.html:102
-#, fuzzy
-#| msgid "Search datasets"
 msgid "See all datasets"
 msgstr "Buscar conjuntos de datos"
 

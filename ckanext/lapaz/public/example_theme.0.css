@@ -213,9 +213,15 @@ functions section
   color: white;
 }
 
+.site-footer h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .site-footer a,
 .site-footer label {
   color: white;
+  font-weight: 100;
 }
 
 .footer-logo {
@@ -224,6 +230,7 @@ functions section
   height: auto;
   margin-bottom: 16px;
 }
+
 
 .footer-credits {
   display: flex;
@@ -239,4 +246,26 @@ functions section
 .footer-credits p {
   margin-top: 6px;
   margin-bottom: 0;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-media a {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  text-decoration: none;
 }

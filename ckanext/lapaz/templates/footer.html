@@ -12,52 +12,54 @@
           <p>
             {% trans %}The centralized portal of government data{% endtrans %}
           </p>
+          <div class="social-media">
+            <a aria-label="facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a aria-label="twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a aria-label="instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 footer-links">
           {% block footer_nav %}
+          <h2>Secciones</h2>
           <ul class="list-unstyled">
-            {% block footer_links %}
-            <li>
-              <a href="{{ h.url_for(controller='home', action='about') }}"
-                >{{ _('About {0}').format(g.site_title) }}</a
-              >
-            </li>
-            {% endblock %}
+            <li><a href="#">Conjuntos de datos</a></li>
+            <li><a href="#">Organizaciones</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Documentos</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Iniciativas destacadas</a></li>
           </ul>
-          <ul class="list-unstyled">
-            {% block footer_links_ckan %} {% set api_url =
-            'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-            <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-            <li>
-              <a href="http://www.ckan.org/">{{ _('CKAN Association') }}</a>
-            </li>
-            <li>
-              <a href="http://www.opendefinition.org/okd/"
-                ><img
-                  src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}"
-                  alt="Open Data"
-              /></a>
-            </li>
-            {% endblock %}
-          </ul>
+          
           {% endblock %}
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
+          <h2>Enlaces internos</h2>
           <ul class="list-unstyled">
-            <li><a href="/">Privacy policy</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">Normativas</a></li>
+            <li><a href="#">Habilitación en datos.gob</a></li>
+            <li><a href="#">Notificar error</a></li>
           </ul>
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-3 attribution">
-          {% block footer_lang %} {% snippet "snippets/language_selector.html"
-          %} {% endblock %}
+          <h2>Ayuda institucional</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Ingreso de solicitud de ayuda</a></li>
+          </ul>
         </div>
       </div>
       {% endblock %}
     </div>
   </div>
 
-  <div class="footer-credits container">
+  <div class="footer-credits container" style="display:none;">
     <img src="redciudadana.png" />
     <p>
       {% trans %}Developed by civil association Red Ciudadana®{% endtrans %}
