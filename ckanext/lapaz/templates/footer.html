@@ -13,14 +13,26 @@
             {% trans %}The centralized portal of government data{% endtrans %}
           </p>
           <div class="social-media">
-            <a aria-label="facebook">
+            <a
+              aria-label="facebook"
+              href="https://www.facebook.com/MunicipioLaPaz/"
+              rel="noopener noreferrer"
+            >
               <i class="fa fa-facebook"></i>
             </a>
-            <a aria-label="twitter">
+            <a
+              aria-label="twitter"
+              href="https://twitter.com/LaPazAlcaldia"
+              rel="noopener noreferrer"
+            >
               <i class="fa fa-twitter"></i>
             </a>
-            <a aria-label="instagram">
-              <i class="fa fa-instagram"></i>
+            <a
+              aria-label="youtube"
+              href="https://www.youtube.com/c/Alcald%C3%ADaLaPazGAMLP"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -28,14 +40,14 @@
           {% block footer_nav %}
           <h2>Secciones</h2>
           <ul class="list-unstyled">
-            <li><a href="#">Conjuntos de datos</a></li>
-            <li><a href="#">Organizaciones</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Documentos</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Iniciativas destacadas</a></li>
+            {{ h.build_nav('dataset.search', _('Datasets')) }} 
+            {{ h.build_nav('organization.index', _('Organizations')) }} 
+            {{ h.build_nav('group.index', _('Categories')) }} 
+            {{ h.build_nav('home.about', _('Documents')) }} 
+            {{ h.build_nav('home.about', _('Help')) }}
+            {{ h.build_nav('dataset.search', _('Featured initiatives')) }}
           </ul>
-          
+
           {% endblock %}
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
@@ -59,7 +71,7 @@
     </div>
   </div>
 
-  <div class="footer-credits container" style="display:none;">
+  <div class="footer-credits container" style="display: none">
     <img src="redciudadana.png" />
     <p>
       {% trans %}Developed by civil association Red Ciudadana®{% endtrans %}

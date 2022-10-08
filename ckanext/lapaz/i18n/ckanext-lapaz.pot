@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-lapaz 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-07 19:11+0000\n"
+"POT-Creation-Date: 2022-10-08 14:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,20 +25,40 @@ msgstr ""
 msgid "The centralized portal of government data"
 msgstr ""
 
-#: ckanext/lapaz/templates/footer.html:22
-msgid "About {0}"
+#: ckanext/lapaz/templates/footer.html:43 ckanext/lapaz/templates/header.html:5
+msgid "Datasets"
 msgstr ""
 
-#: ckanext/lapaz/templates/footer.html:30
-msgid "CKAN API"
+#: ckanext/lapaz/templates/footer.html:44
+msgid "Organizations"
 msgstr ""
 
-#: ckanext/lapaz/templates/footer.html:32
-msgid "CKAN Association"
+#: ckanext/lapaz/templates/footer.html:45
+msgid "Categories"
 msgstr ""
 
-#: ckanext/lapaz/templates/footer.html:63
+#: ckanext/lapaz/templates/footer.html:46
+msgid "Documents"
+msgstr ""
+
+#: ckanext/lapaz/templates/footer.html:47
+msgid "Help"
+msgstr ""
+
+#: ckanext/lapaz/templates/footer.html:48
+msgid "Featured initiatives"
+msgstr ""
+
+#: ckanext/lapaz/templates/footer.html:77
 msgid "Developed by civil association Red Ciudadana®"
+msgstr ""
+
+#: ckanext/lapaz/templates/header.html:5
+msgid "Home"
+msgstr ""
+
+#: ckanext/lapaz/templates/header.html:10
+msgid "About"
 msgstr ""
 
 #: ckanext/lapaz/templates/home/index.html:4

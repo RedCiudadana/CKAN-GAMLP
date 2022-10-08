@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-lapaz 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-07 19:11+0000\n"
+"POT-Creation-Date: 2022-10-08 14:04+0000\n"
 "PO-Revision-Date: 2022-08-20 16:32+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -27,21 +27,43 @@ msgstr "Logo del sitio"
 msgid "The centralized portal of government data"
 msgstr "El portal centralizado de datos de gobierno"
 
-#: ckanext/lapaz/templates/footer.html:22
-msgid "About {0}"
-msgstr "Acerca {0}"
+#: ckanext/lapaz/templates/footer.html:43 ckanext/lapaz/templates/header.html:5
+#| msgid "Search datasets"
+msgid "Datasets"
+msgstr "Conjuntos de datos"
 
-#: ckanext/lapaz/templates/footer.html:30
-msgid "CKAN API"
-msgstr "CKAN API"
+#: ckanext/lapaz/templates/footer.html:44
+msgid "Organizations"
+msgstr "Organizaciones"
 
-#: ckanext/lapaz/templates/footer.html:32
-msgid "CKAN Association"
-msgstr "Asociación CKAN"
+#: ckanext/lapaz/templates/footer.html:45
+#| msgid "Data categories"
+msgid "Categories"
+msgstr "Categorías de datos"
 
-#: ckanext/lapaz/templates/footer.html:63
+#: ckanext/lapaz/templates/footer.html:46
+msgid "Documents"
+msgstr "Documentos"
+
+#: ckanext/lapaz/templates/footer.html:47
+msgid "Help"
+msgstr "Ayuda"
+
+#: ckanext/lapaz/templates/footer.html:48
+msgid "Featured initiatives"
+msgstr "Iniciativas destacadas"
+
+#: ckanext/lapaz/templates/footer.html:77
 msgid "Developed by civil association Red Ciudadana®"
 msgstr "Desarrollado por Asociación Civil Red Ciudadana®"
+
+#: ckanext/lapaz/templates/header.html:5
+msgid "Home"
+msgstr "Inicio"
+
+#: ckanext/lapaz/templates/header.html:10
+msgid "About"
+msgstr "Acerca de"
 
 #: ckanext/lapaz/templates/home/index.html:4
 msgid "Welcome"
@@ -137,4 +159,13 @@ msgstr "Búsquedas populares"
 #~ "text ckan-footer-logo\" "
 #~ "href=\"http://ckan.org\">CKAN</a >"
 #~ msgstr ""
+
+#~ msgid "About {0}"
+#~ msgstr "Acerca {0}"
+
+#~ msgid "CKAN API"
+#~ msgstr "CKAN API"
+
+#~ msgid "CKAN Association"
+#~ msgstr "Asociación CKAN"
 
