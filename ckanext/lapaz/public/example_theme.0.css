@@ -88,13 +88,14 @@ main,
   background: url("/banner-background.png");
   color: white;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   max-width: 2000px;
   margin: 0 auto;
 }
 
 .hero-content {
   margin: 0 auto;
+  width: 100%;
 }
 
 @media all and (min-width: 768px) {
@@ -230,7 +231,6 @@ functions section
   height: auto;
   margin-bottom: 16px;
 }
-
 
 .footer-credits {
   display: flex;
