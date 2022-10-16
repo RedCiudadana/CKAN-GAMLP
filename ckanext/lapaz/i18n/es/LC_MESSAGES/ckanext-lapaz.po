@@ -95,9 +95,7 @@ msgstr "API"
 
 #: ckanext/lapaz/templates/home/layout1.html:42
 msgid "The portal includes an API to facilitate data consumption by third-parties"
-msgstr ""
-"El portal de datos cuenta con una API para facilitar el consumo de "
-"recursos disponibles por parte de los reutilizadores de datos"
+msgstr "El portal de datos abiertos pone a disposición APIs para facilitar el consumo de recursos disponibles por reutilizadores de datos"
 
 #: ckanext/lapaz/templates/home/layout1.html:53
 msgid "Data categories"

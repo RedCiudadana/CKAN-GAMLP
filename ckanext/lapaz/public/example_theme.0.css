@@ -234,9 +234,15 @@ functions section
   font-weight: 100;
 }
 
+.footer-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .footer-logo {
   width: 60%;
-  max-width: 130px;
+  max-width: 80px;
   height: auto;
   margin-bottom: 16px;
 }

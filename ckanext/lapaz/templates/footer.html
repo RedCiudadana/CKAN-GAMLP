@@ -4,11 +4,15 @@
       {% block footer_content %}
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <img
-            alt="{% trans %}Site logo{% endtrans %}"
-            class="footer-logo"
-            src="{{ g.site_logo }}"
-          />
+          <div class="footer-images">
+            <img
+              alt="{% trans %}Site logo{% endtrans %}"
+              class="footer-logo"
+              src="{{ g.site_logo }}"
+            />
+            <img alt="Madrid" class="footer-logo" src="/madrid.png" />
+            <img alt="UCCI" class="footer-logo" src="/ucci.jpg" />
+          </div>
           <p>
             Portal de Datos Abiertos del Gobierno Autónomo Municipal de La Paz
           </p>
