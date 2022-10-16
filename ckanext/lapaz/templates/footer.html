@@ -10,7 +10,7 @@
             src="{{ g.site_logo }}"
           />
           <p>
-            {% trans %}The centralized portal of government data{% endtrans %}
+            Portal de Datos Abiertos del Gobierno Autónomo Municipal de La Paz
           </p>
           <div class="social-media">
             <a
@@ -40,12 +40,10 @@
           {% block footer_nav %}
           <h2>Secciones</h2>
           <ul class="list-unstyled">
-            {{ h.build_nav('dataset.search', _('Datasets')) }} 
-            {{ h.build_nav('organization.index', _('Organizations')) }} 
-            {{ h.build_nav('group.index', _('Categories')) }} 
-            {{ h.build_nav('home.about', _('Documents')) }} 
-            {{ h.build_nav('home.about', _('Help')) }}
-            {{ h.build_nav('dataset.search', _('Featured initiatives')) }}
+            {{ h.build_nav('dataset.search', _('Datasets')) }}
+            {{h.build_nav('group.index', _('Categories')) }} {{
+            h.build_nav('home.about', _('Help')) }} {{
+            h.build_nav('dataset.search', _('Featured initiatives')) }}
           </ul>
 
           {% endblock %}
