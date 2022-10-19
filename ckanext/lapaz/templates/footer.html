@@ -8,10 +8,8 @@
             <img
               alt="{% trans %}Site logo{% endtrans %}"
               class="footer-logo"
-              src="{{ g.site_logo }}"
+              src="/lapaz-logo.jpeg"
             />
-            <img alt="Madrid" class="footer-logo" src="/madrid.png" />
-            <img alt="UCCI" class="footer-logo" src="/ucci.jpg" />
           </div>
           <p>
             Portal de Datos Abiertos del Gobierno Autónomo Municipal de La Paz
@@ -60,13 +58,18 @@
             <li><a href="#">Habilitación en datos.gob</a></li>
             <li><a href="#">Notificar error</a></li>
           </ul>
-        </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 attribution">
           <h2>Ayuda institucional</h2>
           <ul class="list-unstyled">
             <li><a href="#">Ingreso de solicitud de ayuda</a></li>
           </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 attribution">
+          <h2>Con la colaboración de:</h2>
+          <div class="footer-images">
+            <img alt="Madrid" class="footer-logo" src="/madrid.png" />
+            <img alt="UCCI" class="footer-logo" src="/ucci.png" />
+          </div>
         </div>
       </div>
       {% endblock %}

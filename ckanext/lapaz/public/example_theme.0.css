@@ -238,13 +238,20 @@ functions section
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 12px;
 }
 
 .footer-logo {
   width: 60%;
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
   margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.footer-logo--wide {
+  max-width: 200px;
+  max-height: 80px;
 }
 
 .footer-credits {
