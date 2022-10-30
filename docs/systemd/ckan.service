@@ -1,0 +1,14 @@
+[Unit]
+
+Description=CKAN service
+
+After=docker.service
+
+[Service]
+
+ExecStart=/root/start-ckan.sh
+Restart=always
+
+[Install]
+
+WantedBy=default.target
