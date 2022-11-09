@@ -33,7 +33,7 @@
           %}
         </p>
       </a>
-      <a class="function" href="https://docs.ckan.org/en/2.9/api/index.html">
+      <a class="function" href="/pages/api">
         <img src="/api.png" aria-hidden="true" role="presentation" />
         <h2>{% trans %}API{% endtrans %}</h2>
         <p>
@@ -59,7 +59,7 @@
         {% if group.image_url %}
         <img src="{{ group.image_display_url }}" />
         {% endif %}
-        <h2 id="category-title-{{ group.id }}">{{ group.name }}</h2>
+        <h2 id="category-title-{{ group.id }}">{{ group.display_name }}</h2>
         <p>
           {% trans count=group.package_count %} {{ count }} dataset {% pluralize
           %} {{ count }} datasets {% endtrans %}
@@ -87,7 +87,7 @@
         aria-labelledby="dataset-title-{{ package.id }}"
         class="data-category"
       >
-        <h2 id="dataset-title-{{ package.id }}">{{ package.name }}</h2>
+        <h2 id="dataset-title-{{ package.id }}">{{ package.title }}</h2>
         <p>
           {% trans count=package.num_resources %} {{ count }} resources {%
           pluralize %} {{ count }} resources {% endtrans %}
