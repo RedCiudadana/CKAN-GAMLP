@@ -69,14 +69,29 @@ host-server~$ docker compose exec -it ckan /bin/bash
 # Dentro del contenedor
 ckan-container~$ source /usr/lib/ckan/venv/bin/activate
 (venv) ckan-container~$ 
-# Ejecutar instrucciones en este punto
 # Archivo de ckan.ini está en: /etc/ckan/production.ini
+# A partir de acá seguir instrucciones de instalación de cada plugin
 ```
 ### Datapusher
 Los detalles se encuentran dentro de la [Guía de instalación de CKAN](https://docs.google.com/presentation/d/1IZ8epOv1hPF0hhXg9ECA9oYPhC0sHkSmat-g1RO0mhY/edit?usp=sharing)
 
 ### Plugin la paz
-Se puede encontrar la guía de instalación en [ckanext-lapaz](https://gitlab.com/gamlp/portal-de-datos-abiertos.git)
+Clonar el repositorio en el contenedor de CKAN, la copia existente se encuentra en: `/usr/lib/ckan/portal-de-datos-abiertos`
+
+Actualizar repositorio e instalar usando `pip`:
+```sh
+(venv) ckan-container~$ cd /usr/lib/ckan/portal-de-datos-abiertos
+(venv) ckan-container~$ git pull # se pedirá usuario y contraseña
+(venv) ckan-container~$ python setup.py install # Instalará los nuevos cambios al venv
+```
+
+Al finalizar los comandos, reiniciar el contenedor de ckan
+```sh
+(venv) ckan-container~$ exit
+
+# En el host (debian):
+host-server~$ docker compose restart ckan
+```
 
 ### Plugin visualize
 Clonar en el contenedor el siguiente repositorio:
