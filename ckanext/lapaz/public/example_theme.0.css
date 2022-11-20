@@ -195,6 +195,30 @@ functions section
   align-self: center;
 }
 
+.visualization {
+  padding: 20px;
+  box-shadow: rgba(0 0 0 / 16%) 0px 10px 20px, rgb(0 0 0 / 16%) 0px 6px 6px;
+  border-radius: 8px;
+  color: #4a4949;
+  min-width: 265px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.visualization:hover {
+  text-decoration: none;
+}
+
+.visualization .visualization-preview {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  align-self: center;
+}
+
 .data-category p {
   grid-area: description;
   margin: 0;

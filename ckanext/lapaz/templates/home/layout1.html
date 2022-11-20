@@ -111,12 +111,12 @@
       <a
         href="{{ h.url_for('dataset_resource.read', id=visualization.resource.package_id, resource_id=visualization.resource_id) }}?view_id={{ visualization.id }}"
         aria-labelledby="visualization-title-{{ visualization.id }}"
-        class="data-category"
+        class="visualization"
       >
         <h2 id="visualization-title-{{ visualization.id }}">
           {{ visualization.title }}
         </h2>
-        <p>Ver</p>
+        <img class="visualization-preview" src="{{ visualization.config.image_url }}" />
       </a>
       {% endfor %}
     </div>

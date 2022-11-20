@@ -20,7 +20,7 @@ def get_latest_packages():
 def get_visualizations():
     # values = model.Session.query(model.ResourceView).filter_by(view_type='visualize').all()
     values = model.Session.query(model.ResourceView) \
-        .filter(model.ResourceView.view_type.in_(['visualize', 'recline_graph_view'])) \
+        .filter(model.ResourceView.view_type.in_(['image_view'])) \
         .all()
     response = list(map(lambda x: x.as_dict(), values))
     response.reverse()
