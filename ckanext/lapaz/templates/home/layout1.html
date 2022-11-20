@@ -121,4 +121,23 @@
       {% endfor %}
     </div>
   </section>
+  <section
+    aria-labelledby="summary-title"
+    class="container data-categories-section"
+  >
+    <h1 id="summary-title">Cifras</h1>
+    <div class="data-categories-container data-categories-container--center">
+      <div class="summary">
+        <h2>
+          Categorías
+        </h2>
+        <p>{{ h.demo_category_total() }}</p>
+      </div>
+      <div class="summary">
+        <h2>
+          Conjuntos de datos
+        </h2>
+        <p>{{ h.demo_resource_total() }}</p>
+      </div>
+  </section>
 </main>

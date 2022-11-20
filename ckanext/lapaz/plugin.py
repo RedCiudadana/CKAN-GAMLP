@@ -30,6 +30,14 @@ def get_visualizations():
         i['resource'] = resource
     return response[0:5]
 
+def get_category_total():
+    return model.Session.query(model.Group) \
+        .count()
+
+def get_resource_total():
+    return model.Session.query(model.Resource) \
+        .count()
+
 
 class LapazPlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
@@ -53,5 +61,7 @@ class LapazPlugin(plugins.SingletonPlugin, DefaultTranslation):
         return {
             'demo_groups': get_groups,
             'demo_latest_packages': get_latest_packages,
-            'demo_visualizations': get_visualizations
+            'demo_visualizations': get_visualizations,
+            'demo_category_total': get_category_total,
+            'demo_resource_total': get_resource_total,
         }
