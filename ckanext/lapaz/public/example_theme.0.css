@@ -98,6 +98,10 @@ main,
   width: 100%;
 }
 
+.hero-content .tags {
+  padding: 10px 15px;
+}
+
 @media all and (min-width: 768px) {
   .hero-content {
     max-width: 768px;
@@ -135,6 +139,7 @@ functions section
   flex-direction: column;
   align-items: flex-start;
   max-width: 300px;
+  margin: 0 auto;
   text-decoration: none;
   color: #494949;
   transition: box-shadow 0.2s ease-in-out;
@@ -162,7 +167,6 @@ functions section
 
 .data-categories-container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
   gap: 25px;

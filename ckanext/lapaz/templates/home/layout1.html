@@ -109,7 +109,7 @@
     <div class="data-categories-container">
       {% for visualization in h.demo_visualizations() %}
       <a
-        href="{{ h.url_for('dataset_resource.read', id=visualization.resource.package_id, resource_id=visualization.resource_id) }}?view_id={{ visualization.id }}"
+        href="{{ h.url_for('dataset_resource.read', id=visualization.resource.package_id, resource_id=visualization.resource_id) }}"
         aria-labelledby="visualization-title-{{ visualization.id }}"
         class="visualization"
       >
