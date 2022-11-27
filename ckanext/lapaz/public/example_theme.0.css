@@ -282,6 +282,13 @@ functions section
   margin-left: 4px;
 }
 
+.data-summary-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
 /* footer */
 .site-footer {
   background: #494949;
