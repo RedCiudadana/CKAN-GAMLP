@@ -83,6 +83,9 @@ Actualizar repositorio e instalar usando `pip`:
 (venv) ckan-container~$ cd /usr/lib/ckan/portal-de-datos-abiertos
 (venv) ckan-container~$ git pull # se pedirá usuario y contraseña
 (venv) ckan-container~$ python setup.py install # Instalará los nuevos cambios al venv
+# Añadir lapaz a la lista de plugins en production.ini
+```
+```
 ```
 
 Al finalizar los comandos, reiniciar el contenedor de ckan
@@ -115,3 +118,8 @@ $ docker compose restart ckan
 ### Plugin pages
 Este plugin permite la adición de páginas a CKAN
 Seguir la [Guía de instalación de pages](https://github.com/ckan/ckanext-pages#installation).
+
+Ojo: El plugin pages recientemente dejó de soportar python 2.7, por lo que es necesario utilizar la versión 0.3.7:
+```sh
+$ pip install -e git+https://github.com/ckan/ckanext-pages@0.3.7#egg=ckanext-pages
+```
