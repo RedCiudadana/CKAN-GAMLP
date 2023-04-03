@@ -24,11 +24,17 @@ def get_visualizations():
         .all()
     response = list(map(lambda x: x.as_dict(), values))
     response.reverse()
+    visualizations = []
     for i in response:
-        resource = toolkit.get_action('resource_show')(
-            data_dict={'id': i['resource_id']})
-        i['resource'] = resource
-    return response[0:5]
+        try:
+            resource = toolkit.get_action('resource_show')(
+                data_dict={'id': i['resource_id']})
+            # clone i and add resource
+            visualizations.append(i)
+            visualizations[-1]['resource'] = resource
+        except:
+            pass
+    return visualizations[0:5]
 
 def get_category_total():
     return model.Session.query(model.Group) \
