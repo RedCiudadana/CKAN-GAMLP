@@ -1,3 +1,19 @@
+volumes:
+  ckan_config:
+    name: ckan_config_new
+    external: true
+  ckan_home:
+    name: ckan_home_new
+    external: true
+  ckan_storage:
+    name: ckan_storage_new
+    external: true
+  pg_data:
+    name: pg_data_new
+    external: true
+  solr_data:
+    name: solr_data_new
+    external: true
 services:
   ckan:
     labels:
